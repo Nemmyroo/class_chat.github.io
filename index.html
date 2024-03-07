@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Chat</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Heading -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="70" height="70" alt="Class Chat">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Class Chat <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For Educators</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">For Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Class Chat VS the Other Guys</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Customers</a>
+                </li>
+                <li class="nav-item">
+                    <nav class="nav-item">
+                        <form class="navbar-right">
+                            <button class="btn btn-outline-primary" type="button">Log in</button>
+                            <button class="btn btn-primary" type="button">Book A Demo</button>
+                        </form>
+                    </nav>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main" style="margin: 5% 10%;">
+        <!-- Section 1 -->
+        <div class="d-flex">
+            <div class="box" style="margin: 5% 0;">
+                <div>
+                    <h1 style="margin-bottom: 7%;">Made for Campuses.</h1>
+                    <h1 style="margin-bottom: 7%;">
+                        <blue>Built by <u>Students</u>.</blue>
+                    </h1>
+                </div>
+                <br>
+                <h2 style="margin-bottom: 10%;">Class Chat connects all of your campus and classes into one place.
+                    Whether you want to reach 1
+                    student or 100,000, do it instantly.
+                </h2>
+                <div class="d-flex">
+                    <button class="button-1"><a href="#">Book a Demo</a></button>
+                    <button class="button-2"><a href="#">Learn more</a></button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/phone_w.png" class="shadow_1" height="100%" width="100%">
+            </div>
+        </div>
+        <!-- Carousel with a few reviews-->
+            <div id="carouselExampleIndicators2" class="carousel slide box" data-ride="carousel"
+                style="margin: -13% 0 7% 0;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators2" style="background-color: #0041dd;" data-slide-to="0"
+                    class="active"></li>
+                <li data-target="#carouselExampleIndicators2" style="background-color: #0041dd;" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators2" style="background-color: #0041dd;" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p>“Class Chat is a promising tool for facilitating effective communication and collaboration within
+                        the
+                        educational ecosystem. This platform presents a seamless and user-friendly interface, offering
+                        students, faculty, and staff the means to engage in real-time discussions, resource sharing, and
+                        collaborative project work, all within a secure academic environment.”
+                        <br><br>
+                        <b>-Michael Solt.<br>
+                            Dean of College of Business at CSULB</b>
+                    </p>
+                    <img src="images/solt.png" style="border-radius: 90px;" height="10%" width="10%">
+                </div>
+                <div class="carousel-item">
+                    <p>“Class Chat is a promising tool for facilitating effective communication and collaboration within
+                        the
+                        educational ecosystem. This platform presents a seamless and user-friendly interface, offering
+                        students, faculty, and staff the means to engage in real-time discussions, resource sharing, and
+                        collaborative project work, all within a secure academic environment.”
+                        <br><br>
+                        <b>-Michael Solt.<br>
+                            Dean of College of Business at CSULB</b>
+                    </p>
+                    <img src="images/solt.png" style="border-radius: 90px;" height="10%" width="10%">
+                </div>
+                <div class="carousel-item">
+                    <p>“Class Chat is a promising tool for facilitating effective communication and collaboration within
+                        the
+                        educational ecosystem. This platform presents a seamless and user-friendly interface, offering
+                        students, faculty, and staff the means to engage in real-time discussions, resource sharing, and
+                        collaborative project work, all within a secure academic environment.”
+                        <br><br>
+                        <b>-Michael Solt.<br>
+                            Dean of College of Business at CSULB</b>
+                    </p>
+                    <img src="images/solt.png" style="border-radius: 90px;" height="10%" width="10%">
+                </div>
+            </div>
+        </div>
+        <!-- line of partners -->
+        <div class="d-flex" style="margin-bottom: 5%;">
+            <div class="partners">
+                <img src="images/school_logos/hw.png" alt="HW">
+            </div>
+            <div class="partners">
+                <img src="images/school_logos/cypress.png" alt="Cypress High School">
+            </div>
+            <div class="partners">
+                <img src="images/school_logos/anaheim.png" alt="Anaheim Union High School District">
+            </div>
+            <div class="partners" style="padding: 2% 0;">
+                <img src="images/school_logos/western.png" alt="Western High School">
+            </div>
+            <div class="partners">
+                <img src="images/school_logos/cambridge.png" alt="Cambridge Virtual Academy">
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%;">
+                <img src="images/phone_demo_1.png" width="80%">
+            </div>
+            <div class="box">
+                <h1 style="margin: 10% 0 15% 0;">Admins, reach <blue>more</blue> students.
+                    <blue>Faster</blue>.
+                </h1>
+                <h3 style="margin-bottom: 15%;">Stop sending emails no one reads or sees. Engage with your student body
+                    instantly using Class Chat.
+                    Just sign in and you're ready to go. No set up needed.</h3>
+                <button class="button-1" style="width:30%;"><a href="#">Book a Demo</a></button>
+            </div>
+        </div>
+        <div class="d-flex" style="margin-top: -8%;">
+            <div class="box">
+                <h1 style="margin: 15% 0 15% 0;">Teachers, improve students grades. <blue>Instantly</blue>.
+                </h1>
+                <h3 style="margin-bottom: 15%;">Class Chat comes with features that have been proven to have a
+                    significant effect on GPAs and student well being, while requiring no additional effort from you.
+                </h3>
+                <div class="d-flex">
+                    <div>
+                        <p><b> Learn more about our </b></p>
+                    </div>
+                    <div>
+                        <button class="button-1" style="width:160%;"><a href="#">Features</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%;">
+                <img src="images/phone_demo_2.png" width="80%">
+            </div>
+        </div>
+        <div class="d-flex" style="margin-top: -8%;">
+            <div class="box mx-auto d-block" style="align-content: center; padding-left: 8%;">
+                <img src="images/phone_demo_3.png" width="80%">
+            </div>
+            <div class="box">
+                <h1 style="margin: 15% 0 15% 0;">Students, say <blue>goodbye</blue> to <blue>email threads</blue> and
+                    <blue>planners</blue>.
+                </h1>
+                <h3 style="margin-bottom: 15%;">Class Chat will send you reminders and display when your work is coming
+                    up. Class Chat will also let you talk to your classmates about school, class, and anything else you
+                    want.</h3>
+                <p><b>Learn more about how <blue><a href="#">Class Chat can get you better grades!</a></blue></b></p>
+            </div>
+        </div>
+        <h1 class="bh">We make a <blue><u><b>real difference.</b></u></blue>
+        </h1>
+        <blue>
+            <div class="d-flex bot-sec">
+                <div>
+                    <h2>30,000</h2>
+                    <p>Our largest Client hosts 30,000 students.</p>
+                </div>
+                <div>
+                    <h2>95%</h2>
+                    <p>of students say Class Chat makes them feel more connected to their classmates</p>
+                </div>
+                <div>
+                    <h2>1 hour</h2>
+                    <p>to onboard over 90% of students at a campus</p>
+                </div>
+            </div>
+        </blue>
+        <div class="d-flex">
+            <div class="box">
+                <img src="images/phone_w.png" class="shadow_1" height="100%" width="100%">
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide box" data-ride="carousel" style="margin-top: 5%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" style="background-color: #0041dd;" data-slide-to="0"
+                        class="active"></li>
+                    <li data-target="#carouselExampleIndicators" style="background-color: #0041dd;" data-slide-to="1">
+                    </li>
+                    <li data-target="#carouselExampleIndicators" style="background-color: #0041dd;" data-slide-to="2">
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>“The teachers really appreciated the option of using Class Chat and many use it on a regular
+                            basis for quick reminders to students, etc. They like that the platform is similar to
+                            Remind- an app that they have been using for years. Our LMS and Parent Square don't have the
+                            same options to reach students on their cellular devices like Class Chat. It is more
+                            interactive and the students pay attention to the notifications and check their phones.
+                            Announcements on the LMS are often ignored and therefore inefficient. Plus neither
+                            eKadence, nor Parent Square allow for a quick and simple back and forth and sharing of
+                            pictures, PDFs, etc. between teacher and students, especially teacher and multiple students.
+                            Essentially it comes down to the fact that students like the Class Chat format and will use
+                            the app.”
+                            <br><br>
+                        <div class="d-flex">
+                            <div><img src="images/brown.png" style="border-radius: 90px;" height="100%" width="100%">
+                            </div>
+                            <b>Mrs. Brown, Head Principal,
+                                Cypress High School</b>
+                        </div>
+                        <br>
+                        See more <blue><a href="#">customers stories!</a></blue>
+                        </p>
+
+                    </div>
+                    <div class="carousel-item">
+                        <p>“The teachers really appreciated the option of using Class Chat and many use it on a regular
+                            basis for quick reminders to students, etc. They like that the platform is similar to
+                            Remind- an app that they have been using for years. Our LMS and Parent Square don't have the
+                            same options to reach students on their cellular devices like Class Chat. It is more
+                            interactive and the students pay attention to the notifications and check their phones.
+                            Announcements on the LMS are often ignored and therefore inefficient. Plus neither
+                            eKadence, nor Parent Square allow for a quick and simple back and forth and sharing of
+                            pictures, PDFs, etc. between teacher and students, especially teacher and multiple students.
+                            Essentially it comes down to the fact that students like the Class Chat format and will use
+                            the app.”
+                            <br><br>
+                        <div class="d-flex">
+                            <div><img src="images/brown.png" style="border-radius: 90px;" height="100%" width="100%">
+                            </div>
+                            <b>Mrs. Brown, Head Principal,
+                                Cypress High School</b>
+                        </div>
+                        See more <blue><a href="#">customers stories!</a></blue>
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <p>“The teachers really appreciated the option of using Class Chat and many use it on a regular
+                            basis for quick reminders to students, etc. They like that the platform is similar to
+                            Remind- an app that they have been using for years. Our LMS and Parent Square don't have the
+                            same options to reach students on their cellular devices like Class Chat. It is more
+                            interactive and the students pay attention to the notifications and check their phones.
+                            Announcements on the LMS are often ignored and therefore inefficient. Plus neither
+                            eKadence, nor Parent Square allow for a quick and simple back and forth and sharing of
+                            pictures, PDFs, etc. between teacher and students, especially teacher and multiple students.
+                            Essentially it comes down to the fact that students like the Class Chat format and will use
+                            the app.”
+                            <br><br>
+                        <div class="d-flex">
+                            <div><img src="images/brown.png" style="border-radius: 90px;" height="100%" width="100%">
+                            </div>
+                            <b>Mrs. Brown, Head Principal,
+                                Cypress High School</b>
+                        </div>
+                        See more <blue><a href="#">customers stories!</a></blue>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
